@@ -42,10 +42,8 @@ class KamusNamaSpider(scrapy.Spider):
     name = 'kamus_nama'
     start_urls =  build_start_urls('male') + build_start_urls('female')
     name_position = 'front'
-    abjad_min_page = 10
-    rangkaian_min_page = 21
-    
-    
+    abjad_min_page = 21
+    rangkaian_min_page = 1
     
     def start_requests(self):
         for url in self.start_urls:
